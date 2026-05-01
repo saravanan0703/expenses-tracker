@@ -1,4 +1,4 @@
-import BottomNav from "../components/BottomNav";
+// import BottomNav from "../components/BottomNav";
 
 export default function AddExpense() {
   return (
@@ -13,7 +13,7 @@ export default function AddExpense() {
         Save
       </button>
 
-      <BottomNav />
+      {/* <BottomNav /> */}
     </div>
   );
 }

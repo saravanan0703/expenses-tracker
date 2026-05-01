@@ -7,7 +7,7 @@ import { exportExcel } from "../utils/exportExcel";
 import AddExpenseModal from "../components/AddExpenseModal";
 import BudgetModal from "../components/BudgetModal";
 import BudgetProgress from "../components/BudgetProgress";
-import BottomNav from "../components/BottomNav";
+// import BottomNav from "../components/BottomNav";
 import Skeleton from "../components/Skeleton";
 import { useAuth } from "../context/AuthContext";
 import { motion } from "framer-motion";
@@ -230,7 +230,7 @@ export default function Dashboard() {
       {open && <AddExpenseModal onClose={() => setOpen(false)} onSuccess={loadExpenses} />}
       {budgetOpen && <BudgetModal onClose={() => setBudgetOpen(false)} refresh={loadExpenses} />}
 
-      <BottomNav />
+      {/* <BottomNav /> */}
     </div>
   );
 }
